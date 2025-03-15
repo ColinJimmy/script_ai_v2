@@ -98,7 +98,7 @@ def train(model: Model,
         if no_improvement_since >= early_stopping:
             print(f'No more improvement for {early_stopping} epochs. Training stopped.')
             break
-
+                                
 
 def validate(model: Model, loader: DataLoaderIAM, line_mode: bool) -> Tuple[float, float]:
     """Validates NN."""
